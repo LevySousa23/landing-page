@@ -3,33 +3,108 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 	<title>Landing-page</title>
 </head>
+<style>
+	*{	
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		min-height: 100%;
+		color: white;
+		font-family: arial;
+	}
+	html{
+		background-image: url('https://th.bing.com/th/id/OIP.Rl7_EgPTRGeO1EenrvMrowHaDt?rs=1&pid=ImgDetMain');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		background-position: center center;
+	}
+	.main{
+		width: 100%;
+	}
+	ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: end;
+		gap: 42px;
+
+	}
+	li{
+		list-style: none;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+	.nav-bar{
+	  	padding: 40px;
+		margin-right: 10px;
+	}
+	.subcribe{
+		margin: 40px 0 0 62px;
+	}
+	.subcribe .h1-sec{
+		margin-top: 5px;
+		color: blue;
+	}
+	.subcribe p{
+		margin-top: 19px;
+		font-size: 12px;
+		display: flex;
+	}
+	.inputs{
+		margin-top: 31px;
+		display: flex;
+		flex-direction: column;
+		width: 200px;
+  	}
+  	.inputs .name{
+  		border: none;
+		border-radius: 18px;
+		padding: 5px;
+		width: 150px;
+		margin-bottom: 10px;
+		color: black;
+
+  	}
+  	.inputs .enviar{
+  		width: 57px;
+  		color: white;
+  		background: blue;
+  		border: none;
+ 		border-radius: 14px;		
+  		padding: 3px 52px 3px 22px;
+  		outline: none;
+
+  	}
+</style>
 <body>
-	<div>
-		<div>
+	<div class="main">
+		<div class="nav-bar">
 			<ul>
-			<li>Home</li>
-			<li>Services</li>
-			<li>About</li>
-			<li>Contact</li>
-			<li>Faq</li>
+				<li>Home</li>
+				<li>Services</li>
+				<li>About</li>
+				<li>Contact</li>
+				<li>Faq</li>
 			</ul>
 		</div>
-		<div>
+		<div class="subcribe">
+			<div>
 			<h1>Subcribe Now</h1>
-			<h1>to Our Newsletter</h1>
+			<h1 class="h1-sec">to Our Newsletter</h1>
 		</div>
 		<div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat <br> nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia <br> deserunt mollit anim id est laborum.</p>
 		</div>
-		<div>
-			<input type="name" placeholder="nome">
-			<input type="email" placeholder="Email">
-			<button>send</button>
+		<div class="inputs">
+			<input type="name" placeholder="nome" class="name">
+			<input type="email" placeholder="Email" class="name">
+			<button class="enviar">send </button>
 		</div>
 
-
+		</div>
 	</div>
 
 	
